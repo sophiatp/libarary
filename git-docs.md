@@ -11,3 +11,16 @@ $ git push origin <feature-branch> --force  // Can use -f instead of --force
 ```
 
 By this way, your branch always has only one commit!
+
+## file permission
+Check current file permission:
+
+```
+$ git ls-files -s <file_path> 
+```
+
+Revert old file permission
+
+```
+$ git update-index --chmod=-x <file_path>
+```
